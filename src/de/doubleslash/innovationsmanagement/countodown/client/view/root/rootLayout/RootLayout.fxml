@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="parent" minHeight="200.0" minWidth="300.0" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane nodeOrientation="RIGHT_TO_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar fx:id="filterButtonMenu" nodeOrientation="RIGHT_TO_LEFT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <menus>
+                        <Menu mnemonicParsing="false">
+                           <graphic>
+                              <AnchorPane maxHeight="32.0" maxWidth="63.0" nodeOrientation="RIGHT_TO_LEFT">
+                                 <children>
+                                    <ToggleButton fx:id="filterButton" maxHeight="32.0" maxWidth="63.0" mnemonicParsing="false" onAction="#handleFilter" scaleX="0.8" scaleY="0.8" text="%Filter" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-7.0">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                                       </padding>
+                                    </ToggleButton>
+                                 </children>
+                              </AnchorPane>
+                           </graphic>
+                        </Menu>
+                     </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <MenuBar layoutX="-2.0" nodeOrientation="LEFT_TO_RIGHT" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="%File">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#handleClose" text="%Close" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="%Edit">
+                        <items>
+                          <MenuItem mnemonicParsing="false" onAction="#handleNewTask" text="%New_Task" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleShowOptions" text="%Options" />
+                              <CustomMenuItem mnemonicParsing="false">
+                                 <graphic>
+                                    <ToggleButton mnemonicParsing="false" text="%Filter" />
+                                 </graphic>
+                              </CustomMenuItem>
+                        </items>
+                      </Menu>
+                      <Menu fx:id="connection" mnemonicParsing="false" onMenuValidation="#updateConnections" text="%Connection">
+                           <items>
+                              <MenuItem disable="true" mnemonicParsing="false" text="%Nothing_to_Log_in" />
+                           </items></Menu>
+                    </menus>
+                  </MenuBar>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="centerPane" minHeight="0.0" minWidth="0.0" onContextMenuRequested="#showContextMenu" prefHeight="0.0" prefWidth="0.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

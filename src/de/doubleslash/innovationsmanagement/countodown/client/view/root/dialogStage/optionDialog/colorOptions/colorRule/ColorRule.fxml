@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <TextField fx:id="name" prefHeight="25.0" prefWidth="130.0" promptText="%Optional" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0" />
+    <TextField fx:id="month" alignment="CENTER_RIGHT" layoutX="143.0" onKeyTyped="#checkIfNumKey" prefHeight="25.0" prefWidth="30.0" text="%000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="0.0">
+      <padding>
+        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      </padding>
+    </TextField>
+    <Label layoutX="171.0" layoutY="5.0" text="%M" AnchorPane.leftAnchor="180.0">
+      <tooltip>
+        <Tooltip text="%Month" />
+      </tooltip>
+    </Label>
+    <TextField fx:id="week" alignment="CENTER_RIGHT" layoutX="192.0" layoutY="2.0" onKeyTyped="#checkIfNumKey" prefHeight="25.0" prefWidth="30.0" text="%000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0">
+      <padding>
+        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      </padding>
+    </TextField>
+    <Label layoutX="218.0" layoutY="5.0" text="%W" AnchorPane.leftAnchor="230.0">
+      <tooltip>
+        <Tooltip text="%Week" />
+      </tooltip>
+    </Label>
+    <TextField fx:id="day" alignment="CENTER_RIGHT" layoutX="236.0" onKeyTyped="#checkIfNumKey" prefHeight="25.0" prefWidth="30.0" text="%000" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="0.0">
+      <padding>
+        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+      </padding>
+    </TextField>
+    <Label layoutX="274.0" layoutY="5.0" text="%D" AnchorPane.leftAnchor="280.0">
+      <tooltip>
+        <Tooltip text="%Day" />
+      </tooltip>
+    </Label>
+    <ColorPicker fx:id="color" layoutX="334.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="0.0" />
+    <Button layoutX="509.0" mnemonicParsing="false" onAction="#handleRemove" scaleX="0.8" scaleY="0.8" text="%Remove" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="480.0" AnchorPane.topAnchor="0.0" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="nameField" prefWidth="160.0" promptText="%name" />
+      <TextField fx:id="adressField" prefWidth="150.0" promptText="%adress" />
+      <TextField fx:id="filterField" prefWidth="140.0" promptText="%preset_filter" />
+      <Button mnemonicParsing="false" onAction="#handleRemove" scaleX="0.8" scaleY="0.8" text="%Remove" />
+   </children>
+</HBox>

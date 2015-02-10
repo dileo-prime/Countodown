@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane cache="true" mouseTransparent="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+ <children>
+                  <Label fx:id="title" alignment="TOP_CENTER" layoutX="32.0" layoutY="30.0" maxHeight="135.0" maxWidth="336.0" text="asdfasdfasdfasdfasdfasdfasdfasdf" wrapText="true">
+                     <font>
+                        <Font size="56.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="summary" disable="true" text="ignore_summary" visible="false" />
+            <Label fx:id="dueDateLabel" disable="true" text="ignore_dueDateLabel" visible="false" />
+                  <Label fx:id="dueDate" alignment="TOP_LEFT" layoutX="58.0" layoutY="242.0" maxWidth="330.0" text="01-01-1970">
+                     <font>
+                        <Font size="45.0" />
+                     </font>
+                  </Label>
+               </children>
+</Pane>

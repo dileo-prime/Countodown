@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane fx:id="rootPane" fitToWidth="true" hbarPolicy="NEVER" prefHeight="300.0" prefWidth="600.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0">
+         <children>
+            <Label alignment="CENTER" layoutX="62.0" layoutY="27.0" prefWidth="160.0" text="%Symbolic_Name" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+            <Label alignment="CENTER" layoutX="275.0" layoutY="35.0" prefWidth="160.0" text="%Adress" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="10.0" />
+            <Label alignment="CENTER" prefWidth="150.0" text="%preset_filter" AnchorPane.leftAnchor="330.0" AnchorPane.topAnchor="10.0" />
+            <VBox fx:id="jiraNameContainer" spacing="5.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="40.0" />
+            <Button defaultButton="true" layoutX="108.0" layoutY="174.0" mnemonicParsing="false" onAction="#handleSave" prefWidth="140.0" text="%Save" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="20.0" />
+            <Button layoutX="219.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleNew" prefWidth="140.0" text="%Add_New_Jira" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="185.0" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

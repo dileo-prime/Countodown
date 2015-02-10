@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane cache="true" mouseTransparent="true" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+            <children>
+                  <Label fx:id="title" alignment="TOP_LEFT" layoutX="30.0" layoutY="25.0" maxHeight="30.0" maxWidth="330.0" text="asdfasfasdfaäsdfadfadfafadfasdfasdfasdfasdfasdfasdfasdfasdfasdfasdfadf" wrapText="true">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="summary" alignment="TOP_LEFT" layoutX="33.0" layoutY="70.0" maxHeight="120.0" maxWidth="330.0" text="adäfadfasdfadaaasdfasdfasdfasdfasdfasdfasdfsdfasdfasdfasdfasdfasdfasdffasdfasaldfjöakjdfölaksjdflaksjdfölakjsdföjadfajasdfhaksjhflakjhdfklajshdfklahdlfkajshdflkajshdflkjashdf" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dueDateLabel" alignment="TOP_LEFT" layoutX="50.0" layoutY="219.0" text="%Due_Date">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="dueDate" alignment="TOP_LEFT" layoutX="170.0" layoutY="220.0" text="01-01-1970">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+</Pane>

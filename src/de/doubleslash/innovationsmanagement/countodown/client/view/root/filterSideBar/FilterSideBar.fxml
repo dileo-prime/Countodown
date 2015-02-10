@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="210.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Separator orientation="VERTICAL" prefHeight="60.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="-1.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="reloadButton" defaultButton="true" mnemonicParsing="false" onAction="#handleReload" text="%Reload_Tasks" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label alignment="CENTER" text="%Filter" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" prefWidth="200.0" vbarPolicy="ALWAYS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <content>
+            <AnchorPane prefWidth="182.0" scaleShape="false">
+               <children>
+                  <VBox fx:id="box" prefWidth="100.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Main-Class: de.doubleslash.innovationsmanagement.countodown.SetupCountodown
+Class-Path: 
+ lib/bin/boon.jar 
+ lib/bin/commons-io-2.4.jar 
+ lib/bin/commons-lang3-3.3.2.jar 
+ lib/bin/openjfx-dialogs-1.0.2.jar 
+ lib/bin/logback-classic-1.1.2.jar 
+ lib/bin/logback-core-1.1.2.jar 
+ lib/bin/slf4j-api-1.7.7.jar 
+ lib/bin/commons-codec-1.10.jar

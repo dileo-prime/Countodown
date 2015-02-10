@@ -1,0 +1,22 @@
+/** styletest.css place in same dir as TestCssStyles.java and ensure build system copies it to the app compile output path */
+
+.customtextfield:readonly .content{
+  -fx-background-color: #f1f1f1;
+}
+.customtextfield:readonly{
+  -fx-background-color: #f1f1f1;
+  -fx-border-color: DARKGRAY;  
+}
+
+.my-date-picker {
+	 -fx-background-color: #f1f1f1;
+  -fx-border-color: DARKGRAY;  
+}
+
+.my-date-picker .combo-box-base{
+	 -fx-background-color: #f1f1f1;
+  -fx-border-color: DARKGRAY;  
+}
+
+
+/*:readonly */

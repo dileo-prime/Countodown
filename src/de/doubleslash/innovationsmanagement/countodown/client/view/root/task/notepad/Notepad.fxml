@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="rootPane" cache="true" cacheHint="SCALE_AND_ROTATE" onMouseClicked="#openEditTaskDialog" onMouseDragged="#handleDragging" onMousePressed="#handleMousePressed" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <ImageView fx:id="notepad" cache="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@blank-sticky-note-small-tilt.png" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

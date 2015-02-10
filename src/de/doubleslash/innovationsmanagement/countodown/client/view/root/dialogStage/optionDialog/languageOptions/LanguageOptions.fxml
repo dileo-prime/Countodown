@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="showReload" alignment="CENTER" layoutX="33.0" layoutY="23.0" text="%Restart_to_see_Changes" textFill="RED" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <VBox layoutX="120.0" layoutY="119.0" nodeOrientation="RIGHT_TO_LEFT" spacing="5.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <Label nodeOrientation="LEFT_TO_RIGHT" text="%Use_Language" />
+            <ComboBox fx:id="combobox" nodeOrientation="LEFT_TO_RIGHT" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
