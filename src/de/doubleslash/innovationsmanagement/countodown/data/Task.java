@@ -261,10 +261,12 @@ public class Task extends ReadWriteLocked {
   public void setDueDate(final LocalDate dueDate) {
     writeLock();
     try {
-      if ((dueDate != null && dueDate.toString().equals(this.dueDate))) {
-        return; // LocalDate is immutable so test for equal, test for same for both might be null
-      }
-      this.dueDate = dueDate.toString();
+      if (dueDate != null) {
+    	  if(dueDate.toString().equals(this.dueDate)){
+    		  return; // LocalDate is immutable so test for equal, test for same for both might be null
+    	  }
+    	  this.dueDate = dueDate.toString();
+      }    
     } finally {
       unlockWriteLockAndInformObservers();
     }

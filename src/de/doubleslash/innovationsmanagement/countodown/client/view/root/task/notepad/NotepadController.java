@@ -180,8 +180,8 @@ public class NotepadController implements Initializable, Observable {
     long workToDo = task.getWorkToDo();
     if (workToDo > MAX_MINS_TO_WORK_DAYLI) {
       workToDo = MAX_MINS_TO_WORK_DAYLI;
-    }
-
+    }  
+    
     currentSize = workToDo + SIZEFACTOR;
 
     adjustScale();
@@ -191,12 +191,13 @@ public class NotepadController implements Initializable, Observable {
     // will be set to Quality at the end of updatePosition
     rootPane.setCacheHint(CacheHint.SPEED);
     currentScaledSize = currentSize * outerScale;
+  
     final double scale = currentScaledSize / imageSize;
 
     rootPane.setScaleX(scale);
     rootPane.setScaleY(scale);
     currentScaleOffset = (currentScaledSize - imageSize) / 2;
-
+ 
     updatePosition();
     adjustLabel();
 

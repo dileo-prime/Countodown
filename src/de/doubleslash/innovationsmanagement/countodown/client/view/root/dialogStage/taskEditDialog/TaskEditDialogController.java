@@ -140,7 +140,7 @@ public class TaskEditDialogController implements Initializable {
     description.textProperty().addListener(listener);
 
     dueDatePicker.valueProperty().addListener((obs, oldV, newV) -> {
-      if (!newV.equals(oldV)) {
+      if (newV != null && !newV.equals(oldV)) {
         listener.invalidated(obs);
       }
     });
@@ -212,20 +212,22 @@ public class TaskEditDialogController implements Initializable {
     if (title.getText().isEmpty()) {
       out += "Title must contain text" + seperator;
     }
-    if (summary.getText().isEmpty()) {
-      out += "Summary must contain text" + seperator;
-    }
-    final String firstName = assigneeFirstName.getText();
-    final String lastName = assigneeLastName.getText();
-    if ((firstName == null || firstName.isEmpty()) && (lastName == null || lastName.isEmpty())) {
-      out += "Assignee must have a Name" + seperator;
-    }
-    if (workToDoInMins() == 0) {
-      out += "Work to do must be longer then 0 minutes" + seperator;
-    }
-    if (dueDatePicker.getValue() == null) {
-      out += "There must be a DueDate" + seperator;
-    }
+//removed mandatory fields    
+//	String summaryText = summary.getText();
+//    if (summaryText == null || summaryText.isEmpty()) {
+//      out += "Summary must contain text" + seperator;
+//    }
+//    final String firstName = assigneeFirstName.getText();
+//    final String lastName = assigneeLastName.getText();
+//    if ((firstName == null || firstName.isEmpty()) && (lastName == null || lastName.isEmpty())) {
+//      out += "Assignee must have a Name" + seperator;
+//    }
+//    if (workToDoInMins() == 0) {
+//      out += "Work to do must be longer then 0 minutes" + seperator;
+//    }
+//    if (dueDatePicker.getValue() == null) {
+//      out += "There must be a DueDate" + seperator;
+//    }
     return out;
   }
 
